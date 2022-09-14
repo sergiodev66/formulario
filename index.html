@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="validar.js"></script>
+    <title>Formulario de registro</title>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form action="registrar.php" method="post" class="formulario" onsubmit="return validar();">
+        <h2 class="titulo">CREA UNA CUENTA</h2>
+        <div class="contenedor">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="mitad" required>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos"class="mitad" required >
+            <input type="email" id="correo" name="correo" placeholder="Correo" class="entero" required>
+            <input type="text" id="usuario" name="usuario" placeholder="usuario"class="mitad" required>
+            <input type="password" id="clave" name="clave" placeholder="contraseña"class="mitad" required>
+            <input type="text" id="telefono" name="telefono" placeholder="Telefono" class="entero" required>
+            <input type="submit" value="Registrar" class="registrar">
+            <p class="link">Tienes una cuenta? <a href="">Ingresar</a></p>
+        </div>
+    </form>
+</body>
+</html>
